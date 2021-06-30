@@ -12,7 +12,7 @@ jobs:
   - task: SonarCloudPrepare@1
     inputs:
       SonarCloud: 'SC' # Name of the SonarCloud service connection you created
-      organization: 'amelie-renard-sonarsource'
+      organization: 'amelierenard-1'
       scannerMode: 'CLI'
       configMode: 'file'
   - bash: |
