@@ -22,7 +22,7 @@ jobs:
     displayName: Download and install build wrapper
   - bash: |
       export PATH=$HOME/.sonar/build-wrapper-macosx-x86:$PATH
-      build-wrapper-macosx-x86 --out-dir build_wrapper_output_directory xcodebuild
+      build-wrapper-macosx-x86 --out-dir bw_output xcodebuild clean build -scheme TypeOfTest
     workingDirectory: .
     displayName: Build in build-wrapper
   - task: SonarCloudAnalyze@1
