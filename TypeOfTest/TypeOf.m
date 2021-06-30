@@ -14,5 +14,9 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         weakSelf.count++;
     });
+
+    __weak __typeof__(self) weakSelf1 = self;
+
+    __weak __typeof(self) weakSelf2 = self;
 }
 @end
